@@ -1,7 +1,7 @@
 About mkdocstrings-python
 =========================
 
-Home: https://pypi.org/project/mkdocstrings-python-legacy/
+Home: https://pypi.org/project/mkdocstrings-python/
 
 Package license: MIT
 
