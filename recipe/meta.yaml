@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python" %}
-{% set version = "0.5.4" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings-python-{{ version }}.tar.gz
-  sha256: e52bbfbf4c3ce9c3c8e692308b4154f9c9de0d7131a675e3c8844c3dad6283b2
+  sha256: c64fbada8bc5b720a3fed89fcc73f2edced16fa68e106156e780c0e4aec5f8bb
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ test:
     - tests.py
 
 about:
-  home: https://pypi.org/project/mkdocstrings-python-legacy/
+  home: https://pypi.org/project/mkdocstrings-python/
   doc_url: https://mkdocstrings.github.io/python
   dev_url: https://github.com/mkdocstrings/python
   summary: A Python handler for mkdocstrings.
