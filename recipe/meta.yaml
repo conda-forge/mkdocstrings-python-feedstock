@@ -27,12 +27,16 @@ requirements:
 test:
   commands:
     - pip check
-    - pytest tests.py
+    - pytest
   requires:
     - pip
-    - pytest
+    - pytest >=6.2
+    - pytest-xdist >=2.4
+    - pytest-randomly >=3.10
   files:
     - tests.py
+  source_files:
+    - tests
 
 about:
   home: https://pypi.org/project/mkdocstrings-python/
