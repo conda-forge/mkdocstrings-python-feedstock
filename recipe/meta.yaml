@@ -25,14 +25,13 @@ requirements:
     - griffe >=0.11.1
 
 test:
+  imports:
+    - mkdocstrings_handlers.python
   commands:
     - pip check
-    - pytest tests.py
   requires:
     - pip
     - pytest
-  files:
-    - tests.py
 
 about:
   home: https://pypi.org/project/mkdocstrings-python/
