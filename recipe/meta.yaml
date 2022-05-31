@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -31,7 +31,6 @@ test:
     - pip check
   requires:
     - pip
-    - pytest
 
 about:
   home: https://pypi.org/project/mkdocstrings-python/
