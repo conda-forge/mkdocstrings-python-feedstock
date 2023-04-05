@@ -1,11 +1,11 @@
-About mkdocstrings-python
-=========================
+About mkdocstrings-python-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocstrings-python-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/mkdocstrings-python/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocstrings-python-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python handler for mkdocstrings.
 
