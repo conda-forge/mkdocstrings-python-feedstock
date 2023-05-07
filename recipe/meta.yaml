@@ -1,25 +1,25 @@
 {% set name = "mkdocstrings-python" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings-python-{{ version }}.tar.gz
-  sha256: da0a54d7d46523a25a5227f0ecc74b491291bd9d36fc71445bfb0ea64283e287
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d5c8fec312f482413330fb749a119078e48447888e78a178a98a868451bff785
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - python >=3.7
-    - pdm
-    - pdm-pep517
+    - pdm >2
+    - pdm-backend
   run:
     - python >=3.7
     - mkdocstrings >=0.20
