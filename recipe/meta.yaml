@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - pdm >2
     - pdm-backend
   run:
-    - python >=3.7
+    - python >=3.8
     - mkdocstrings >=0.20
     - griffe >=0.30
 
