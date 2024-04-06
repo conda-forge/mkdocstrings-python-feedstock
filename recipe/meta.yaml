@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python" %}
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 077188fa43eab3b689826b15da7da6753501224b2482e4eca3ce4412ce3b71cb
+  sha256: 8546a103c9b22e1778c72c887696acc39a6635fedde3c912ce00f967518a8847
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -22,9 +22,8 @@ requirements:
     - pdm-backend
   run:
     - python >=3.8
-    - mkdocstrings >=0.20
+    - mkdocstrings >=0.24.2
     - griffe >=0.37
-    - markdown <3.6,>=3.3
 
 test:
   imports:
