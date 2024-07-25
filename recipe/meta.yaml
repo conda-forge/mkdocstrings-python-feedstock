@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python" %}
-{% set version = "1.10.5" %}
+{% set version = "1.10.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: acdc2a98cd9d46c7ece508193a16ca03ccabcb67520352b7449f84b57c162bdf
+  sha256: bfb5e29acfc69c9177d2b11c18d3127d16e553b8da9bb6d184e428d54795600b
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.8
     - mkdocstrings >=0.25
-    - griffe >=0.47
+    - griffe >=0.48
 
 test:
   imports:
