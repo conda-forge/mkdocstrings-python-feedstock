@@ -3,15 +3,13 @@ About mkdocstrings-python-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocstrings-python-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/mkdocstrings-python/
+Home: https://mkdocstrings.github.io/python
 
-Package license: MIT
+Package license: ISC
 
 Summary: A Python handler for mkdocstrings.
 
 Development: https://github.com/mkdocstrings/python
-
-Documentation: https://mkdocstrings.github.io/python
 
 Current build status
 ====================
