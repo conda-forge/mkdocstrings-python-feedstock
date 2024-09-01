@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - mkdocstrings >=0.25
     - griffe >=0.49
-    # - mkdocs-autorefs >=1.0
+    - mkdocs-autorefs >=1.0
 
 test:
   imports:
