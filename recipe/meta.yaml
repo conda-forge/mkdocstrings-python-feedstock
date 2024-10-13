@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - pdm >2
     - pdm-backend
   run:
-    - python >=3.8
+    - python >=3.9
     - mkdocstrings >=0.26
     - griffe >=0.49
     - mkdocs-autorefs >=1.2
