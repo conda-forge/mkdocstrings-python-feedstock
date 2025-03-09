@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python" %}
-{% set version = "1.16.2" %}
+{% set version = "1.16.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 942ec1a2e0481d28f96f93be3d6e343cab92a21e5baf01c37dd2d7236c4d0bd7
+  sha256: d0cdee60399b397e7cbb25075cac4aa7a27b34f75621eb1898dfebc98b88d600
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pdm-backend
   run:
     - python >={{ python_min }}
-    - mkdocstrings >=0.28.2
+    - mkdocstrings >=0.28.3
     - griffe >=0.49
     - mkdocs-autorefs >=1.4
     - typing_extensions >=4.0
