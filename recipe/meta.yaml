@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python" %}
-{% set version = "1.16.8" %}
+{% set version = "1.16.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9453ccae69be103810c1cf6435ce71c8f714ae37fef4d87d16aa92a7c800fe1d
+  sha256: f9eedfd98effb612ab4d0ed6dd2b73aff6eba5215e0a65cea6d877717f75502e
 
 build:
   noarch: python
